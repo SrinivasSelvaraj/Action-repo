@@ -17,6 +17,6 @@ jobs:
       - name: Send webhook
         uses: distributhor/webhook-action@master
         with:
-          url: 'https://your-registered-endpoint'
+          url: 'https://61ed-49-207-232-202.ngrok-free.app'
           method: 'POST'
           payload: '{"event": "${{ github.event_name }}", "payload": "${{ toJson(github.event) }}"}'
